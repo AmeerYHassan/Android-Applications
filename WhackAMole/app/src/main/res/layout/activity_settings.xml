@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings">
+
+    <Button
+        android:id="@+id/deleteAll"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="184dp"
+        android:onClick="deleteAllRecords"
+        android:text="Delete All Records"
+        app:layout_constraintBottom_toTopOf="@+id/deleteSpecific"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/deleteSpecific"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:onClick="deleteSpecificRecord"
+        android:text="Delete Specific Record"
+        app:layout_constraintBottom_toTopOf="@+id/nameText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deleteAll" />
+
+    <EditText
+        android:id="@+id/nameText"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Enter Name to Delete"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deleteSpecific" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="203dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="32dp"
+        android:text="Settings Page"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/menuBtn"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="32dp"
+        android:onClick="backToMenu"
+        android:text="Return To Menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/roundLengthText"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Enter round length here"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/roundLengthBtn" />
+
+    <Button
+        android:id="@+id/roundLengthBtn"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:onClick="getRoundLength"
+        android:text="Submit Round Length"
+        app:layout_constraintBottom_toTopOf="@+id/roundLengthText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameText"
+        app:layout_constraintVertical_bias="0.696" />
+</androidx.constraintlayout.widget.ConstraintLayout>
