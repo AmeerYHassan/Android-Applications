@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FlingDemo">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Image Dismissal with Fling"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="592dp"
+        android:text="Fling the image to dismiss it."
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="396dp"
+        android:layout_height="556dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris velit arcu, dignissim eget dictum quis, dignissim ut ex. Donec eget libero sit amet mi maximus tincidunt at et lacus. Donec nisl tortor, venenatis non elementum sed, vehicula quis massa. Pellentesque id enim et tellus convallis sagittis. Pellentesque vel varius quam. Proin interdum eleifend risus, quis ullamcorper mi tempor at. Phasellus egestas sollicitudin erat, ut condimentum risus imperdiet quis. Vestibulum eget arcu nisi. Praesent eu malesuada tellus.  Quisque vulputate dolor a mauris vestibulum, ut tempor felis efficitur. In ac vestibulum sapien, vel placerat orci. Donec faucibus mollis diam a tempor. Fusce magna ex, blandit eget tempor placerat, placerat at augue. Proin a erat ligula. Vestibulum ac neque velit. Morbi vulputate massa ligula, scelerisque faucibus est finibus ac. Quisque ac cursus tortor. Nunc augue nulla, commodo at facilisis a, aliquam ultrices risus.  Donec dolor magna, iaculis sagittis felis a, consectetur aliquet sem. Praesent quis volutpat est, in condimentum diam. Etiam augue sem, congue eu arcu sit amet, eleifend eleifend nisi. Donec molestie laoreet dui ut lobortis. Pellentesque scelerisque auctor ornare. In et nulla velit. Duis fermentum mattis arcu, fermentum ultricies nunc placerat ut. Sed aliquet commodo quam vel molestie. Sed vitae scelerisque ipsum. Curabitur luctus ipsum vel massa efficitur finibus. Maecenas ac sagittis augue. Fusce at ex quis nisl elementum condimentum. Aliquam non velit ante. Morbi tincidunt vitae quam a aliquet. Aliquam faucibus nisl et turpis scelerisque, nec sodales felis tincidunt. Vestibulum commodo laoreet est, interdum imperdiet urna cursus a. Sed interdum dui non viverra ultrices. Vivamus tortor magna, congue maximus neque vel, scelerisque aliquam libero. Pellentesque tristique lorem erat, sed volutpat nunc imperdiet non. Quisque aliquet turpis in tristique tempus. Nullam gravida est massa, eget maximus dui scelerisque sed. Integer in varius leo. Curabitur at arcu lobortis, finibus purus in, dapibus purus. Nullam in congue metus, sit amet ullamcorper enim. Integer sed porta justo. Proin luctus velit at nibh euismod, vitae malesuada purus ornare. Sed quis ultrices mi. Nunc sollicitudin metus a tellus eleifend faucibus. Pellentesque ac mi vitae felis dignissim varius vitae sed lacus. Cras lobortis, magna ut pharetra volutpat, est purus fermentum libero, eu rhoncus ipsum nisi quis diam."
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        tools:layout_editor_absoluteX="7dp" />
+
+    <ImageView
+        android:id="@+id/flingImage"
+        android:layout_width="275dp"
+        android:layout_height="523dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView11"
+        app:srcCompat="@drawable/androidman" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="133dp"
+        android:layout_marginBottom="24dp"
+        android:onClick="toMenu"
+        android:text="Back to Menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+</androidx.constraintlayout.widget.ConstraintLayout>
