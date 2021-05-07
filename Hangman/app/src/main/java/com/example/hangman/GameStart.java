@@ -125,7 +125,7 @@ public class GameStart extends AppCompatActivity {
 
         currWorkingString = blankWord;
         indexMap = new HashMap();
-        
+
         for(int i = 0; i < currGameWord.length(); i++){
             ArrayList<Integer> indices = new ArrayList();
             Character currChar = currGameWord.charAt(i);
